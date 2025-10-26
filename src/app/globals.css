@@ -1,0 +1,41 @@
+/* Remove default TailwindCSS base styles if they exist */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+  1. Define CSS variables for the default light theme.
+  This is the most important part to fix your issue.
+*/
+:root {
+  --background: #ffffff; /* A pure white background for light mode */
+  --foreground: #000000; /* Black text for light mode */
+  --toolbar-background: #f7f7f7;
+  --border-color: #e5e7eb;
+  --button-background: #f3f4f6;
+  --button-hover-background: #e5e7eb;
+}
+
+/* 
+  2. Define CSS variables for the dark theme.
+  These styles are applied ONLY when the .dark class is present.
+*/
+.dark {
+  --background: #111827; /* Dark background */
+  --foreground: #ffffff; /* White text */
+  --toolbar-background: #1f2937;
+  --border-color: #374151;
+  --button-background: #374151;
+  --button-hover-background: #4b5563;
+}
+
+/* 
+  3. Apply the variables to the body.
+  This ensures the whole page background and text color switch correctly.
+*/
+body {
+  color: var(--foreground);
+  background-color: var(--background);
+  /* Add a smooth transition for theme changes */
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
