@@ -31,10 +31,10 @@ export default function AboutPage() {
             <section style={{ marginBottom: '40px' }}>
                 <h2 style={{ fontSize: '1.8rem' }}>Creator Information</h2>
                 <p style={{ fontSize: '1.1rem' }}>
-                    <strong>Name:</strong> Your Name
+                    <strong>Name:</strong> Jinuka Methjaya Samarasinghe 
                 </p>
                 <p style={{ fontSize: '1.1rem' }}>
-                    <strong>Student Number:</strong> 12345678
+                    <strong>Student Number:</strong> 22231148
                 </p>
             </section>
 
